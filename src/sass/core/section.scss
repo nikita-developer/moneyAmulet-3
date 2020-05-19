@@ -1,0 +1,144 @@
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &_face {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: calc(100% + 50px);
+            height: 100%;
+            content: '';
+            background-image: url("../media/section/face.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            animation: trafficBg 10s infinite ease;
+        }
+    }
+
+    &_face-footer {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: calc(100% + 50px);
+            height: 100%;
+            content: '';
+            background-image: url("../media/section/face-footer.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            animation: trafficBg 10s infinite ease;
+        }
+    }
+
+    &_luck {
+        background-image: url("../media/section/luck.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_help {
+        background-image: url("../media/section/help.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_expectation {
+        background-image: url("../media/section/expectation.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_fact {
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    &_progress {
+        background-image: url("../media/section/progress.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_commits {
+        background-color: #fff;
+    }
+
+    &_secret {
+        background-image: url("../media/section/secret.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.section__title {
+    font-family: "OldKharkiv", sans-serif;
+}
+
+@media (max-width: 1030px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &_help {
+            background-image: url("../media/section/help-1030.jpg");
+        }
+
+        &_secret {
+            background-image: url("../media/section/secret-1030.jpg");
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_expectation {
+            background-image: url("../media/section/expectation-768.jpg");
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        &_face {
+            &::before {
+                background-image: url("../media/section/face-480.jpg");
+            }
+        }
+
+        &_face-footer {
+            &::before {
+                background-image: url("../media/section/face-480.jpg");
+            }
+        }
+    }
+}
+
+@keyframes trafficBg {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

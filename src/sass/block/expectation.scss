@@ -1,0 +1,50 @@
+
+.expectation {
+    display: flex;
+}
+
+.expectation__title {
+    max-width: 375px;
+    margin-right: 40px;
+    font-size: 77px;
+    line-height: 63px;
+    color: #fff;
+}
+
+.expectation__description {
+    max-width: 220px;
+    padding: 30px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fef2b7;
+}
+
+@media (max-width: 768px) {
+    .expectation {
+        flex-direction: column;
+    }
+
+    .expectation__title {
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 50px;
+        font-size: 47px;
+        line-height: .9;
+    }
+
+    .expectation__description {
+        max-width: none;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .expectation__title {
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .expectation__description {
+        text-align: center;
+    }
+}
