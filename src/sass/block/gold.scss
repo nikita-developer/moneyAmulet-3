@@ -1,0 +1,114 @@
+
+@media (min-width: 768px) {
+    .gold {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 200px;
+        height: 240px;
+        margin-left: 375px;
+    }
+
+    .gold__item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-repeat: no-repeat;
+        opacity: 1;
+
+        &_1 {
+            width: 55px;
+            height: 49px;
+            background-image: url("../media/gold/item-1.png");
+            transform: translate(-52px, -9px);
+            animation: gold 3.9s infinite linear;
+        }
+
+        &_2 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(55px, -37px);
+            animation: gold 3s infinite ease;
+        }
+
+        &_3 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-96px, -14px);
+            animation: gold 4s infinite ease-out;
+        }
+
+        &_4 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-21px, 80px);
+            animation: gold 2.3s infinite ease-in-out;
+        }
+
+        &_5 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-76px, -96px);
+            animation: gold 5.5s infinite ease;
+        }
+
+        &_6 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(33px, -67px);
+            animation: gold 4.1s infinite ease-in-out;
+        }
+
+        &_7 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-59px, -130px);
+            animation: gold 4.8s infinite ease-out;
+        }
+
+        &_8 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(18px, 35px);
+            animation: gold 2.6s infinite ease;
+        }
+
+        &_9 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-65px, 50px);
+            animation: gold 3.5s infinite linear;
+        }
+
+        &_10 {
+            width: 41px;
+            height: 40px;
+            background-image: url("../media/gold/item-2.png");
+            transform: translate(-40px, -118px);
+            animation: gold 4.5s infinite ease-out;
+        }
+    }
+
+    @keyframes gold {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            top: 50%;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}

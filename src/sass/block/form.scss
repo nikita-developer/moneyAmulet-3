@@ -54,6 +54,20 @@
         transition: .3s;
         transform: translateY(-50%);
     }
+
+    &_select {
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 8px;
+            height: 5px;
+            content: '';
+            background-image: url("../media/form/arrow.png");
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 .form__field {
